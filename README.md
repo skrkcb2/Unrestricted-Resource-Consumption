@@ -21,7 +21,16 @@ bucket4j.limits[0].requests=10  # 최대 10회 요청 허용
 bucket4j.limits[0].interval=60  # 60초 내에 10회 요청 허용
 ```
 #### 5. 무제한 캐싱  
+```
+spring.cache.type=ehcache # 캐시 타입을 Ehcache로 설정
+spring.cache.ehcache.config=classpath:ehcache.xml # 캐시 파일 위치 및 설정 파일 경로 (Ehcache 설정 파일)
+spring.cache.ehcache.time-to-live=3600s  # 1시간
+spring.cache.ehcache.max-entries=1000    # 캐시 최대 항목 수
+```
 #### 6. 무제한 입력 검증 미비  
-#### 7. 무제한 스크립트 실행  
-#### 8. 무제한 템플릿 렌더링  
+```
+@NotEmpty(message = "이름은 필수 항목입니다.")
+@Size(min = 3, max = 50, message = "이름은 3자 이상 50자 이하로 입력하세요.")
+private String name;
+```
 
