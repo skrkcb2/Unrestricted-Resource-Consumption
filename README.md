@@ -2,8 +2,13 @@
 ### 특징: 자원의 고정하지 않았을때 발생하는 취약점이다
 ### 취약점, 보안 방안, 공격 예시
 #### 1. 파일 업로드 크기 제한 미설정  
-![image](https://github.com/user-attachments/assets/496addb7-0ef7-4789-9cbc-24eb7a2c7d13)
+```
+spring.servlet.multipart.max-file-size=10MB 
+```
 #### 2. 무제한 요청 크기  
+```
+spring.servlet.multipart.max-request-size=10MB  
+```
 #### 3. 무제한 세션 저장소 크기
 #### 4. 무제한 API 요청
 #### 5. 무제한 캐싱  
