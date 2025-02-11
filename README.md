@@ -27,7 +27,7 @@ spring.cache.ehcache.config=classpath:ehcache.xml # 캐시 파일 위치 및 설
 spring.cache.ehcache.time-to-live=3600s  # 1시간 / 이 설정을 위에 설정 파일로 관리 가능  
 spring.cache.ehcache.max-entries=1000    # 캐시 최대 항목 수 / 이 설정을 위에 설정 파일로 관리 가능  
 ```
-#### 6. 무제한 입력 검증 미비(JS 작성 / vo,dto,dao 등에 작성)  
+#### 6. 무제한 입력 검증 미비(JS 작성 / vo,dto,dao 등에 서도 설정 가능 합니다)  
 ```
 <script>
     document.getElementById("loginForm").addEventListener("submit", function(event) {
