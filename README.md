@@ -50,7 +50,7 @@ spring.cache.ehcache.max-entries=1000    # 캐시 최대 항목 수 / 이 설정
             usernameError.textContent = "아이디를 입력해주세요.";
             isValid = false;
         } else if (username.value.length < 4 || username.value.length > 12) {
-            usernameError.textContent = "아이디는 4~12자 사이여야 합니다.";
+            usernameError.textContent = "아이디는 4~12자 사이여야 합니다."; # 해당파트 가 무제한 입력 방지
             isValid = false;
         }
 
